@@ -1,0 +1,92 @@
+hr{
+    border: 0;
+    border-bottom: 3px solid #da70d6 ;
+}
+
+
+.container{
+    position: relative;
+    text-align: center;
+    height: 32rem;
+    background-image: url(../images/img1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sub-title{
+    font-family: 'Raleway';
+    font-size: 1.75rem;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.image-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.hero-image{
+    width: 100%;
+    height: 600px;
+}
+.hero-title{
+    font-family: 'Raleway';
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero-body{
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: 1px;
+}
+.hero-link{
+    font-family: 'Raleway';
+    font-size: 1.15rem;
+    text-decoration: underline;
+    letter-spacing: 1.2px;
+}
+.hero-link > a{
+    color: white;
+    transition: color 300ms ease-in-out;
+    background-color: black;
+    padding: 3px;
+}
+.hero-link > a:hover{
+    color: #da70d6 ;
+}
+.previews{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.previews li{
+    margin: .75rem;
+    padding: 1.25rem;
+}
+ul .sub-title{
+    margin-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width: 640px) {
+    .hero-title{
+        font-size: 2.25rem;
+    }
+    .hero-body{
+        font-size: 1.25rem;
+    }
+    .previews{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+

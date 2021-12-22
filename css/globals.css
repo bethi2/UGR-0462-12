@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #da70d6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+    overflow-x: none;
+}
+*{
+    box-sizing: border-box;
+}
+a, a:hover, a:visited{
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li.menu-item {
+    padding: 0 1em;
+    font-size: larger;
+}
+
+a.menu-link {
+    text-decoration: none;
+    color: black;
+}
+
+li.logo {
+    margin: auto;
+    margin-left: 0;
+    font-size: 3rem;
+}
+
+
+footer{
+    margin-top: auto;
+}
+.more{
+    font-size: 1.25rem;
+    letter-spacing: 1.2px;
+    text-decoration: underline;
+}
+.more > a{
+    color: white;
+    transition: color 300ms ease-in-out;
+}
+.more > a:hover{
+    color: black;
+}
+.logo{
+    color: black;
+    margin-left: 3rem;
+    font-family: 'Bradely Hand';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contact-me{
+    color: #434343;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    transition: color 200ms ease-in-out;
+}
+.contact-me:hover{
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+ul.about{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.footer{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.75rem;
+}
+.phone-text{
+    display: flex;
+    align-items: center;
+    margin: 1.125rem;
+}
+.phone-text > a{
+    color: black;
+}
+.phone-image{
+    margin-right: 1.25rem;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials > a{
+    margin-right: 3rem;
+}
+.socials > a:last-child{
+    margin-right: 0;
+}
+.copyright{
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+@media screen and (max-width: 640px) {
+    .logo{
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+    .contact-me{
+        font-size: 1.25rem;
+    }
+    .footer{
+        flex-direction: column;
+        padding-top: 1.5rem;
+    }
+    .phone{
+        margin-bottom: 2.25rem;
+    }
+    .phone-text{
+        margin: 0;
+    }
+    .copyright{
+        margin-bottom: 2.25rem;
+    }
+    .socials{
+        margin-bottom: 2.25rem;
+    }
+}

@@ -1,0 +1,38 @@
+.skills-title{
+    text-decoration: none;
+    text-transform: none;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.project .image{
+    margin-right: 1.75rem;
+    align-self: flex-start;
+}
+.image > img{
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 40em) {
+    .skills-title{
+        font-size: 1.85rem;
+    }
+    .image > img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 68em) {
+    .skills{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+   
+    .image > img{
+        width: 250px;
+        height: 250px;
+    }
+}
